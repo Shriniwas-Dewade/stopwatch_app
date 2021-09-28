@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#5fd1de"
+	android:gravity="center" >
+
+    <TextView
+		android:id="@+id/Time"
+		android:gravity="center"
+		android:textSize="56sp"
+		android:textColor="#dee346"
+		android:layout_marginTop="-200px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center" >
+		<Button
+		android:id="@+id/start"
+		android:layout_below="@+id/Time"
+		android:color="#4656e3"
+		android:textColor="#49e4f2"
+		android:layout_marginTop="20dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:onClick="start"
+		android:text="Start" />
+	
+
+	<Button
+		android:id="@+id/stop"
+		android:layout_below="@+id/start"
+		android:textColor="#49e4f2"
+		android:colorPrimary="#4656e4"
+		android:layout_marginTop="10dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:onClick="stop"
+		android:text="Stop" />
+
+	<Button
+		android:id="@+id/reset"
+		android:layout_below="@+id/stop"
+		android:textColor="#49e4f2"
+		android:color="#4656e3"
+		android:layout_marginTop="10dp"
+		android:layout_width="wrap_content"
+		android:onClick="reset"
+		android:layout_height="wrap_content"
+		android:text="Reset" />
+	</RelativeLayout>
+</RelativeLayout>
